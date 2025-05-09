@@ -6,20 +6,24 @@
   <title>Document</title>
 </head>
 <body>
+  <a href="/">Home</a>
   <h2>New Message</h2>
+
   <form method="POST" action="/new" class="form-new-message">
     <div class="form-new-message-field">
       <label for="user">Your Name: </label>
-      <input type="text" name="user" id="user" required/>
+      <input type="text" name="messageUser" id="messageUser" required/>
     </div>
     <div class="form-new-message-field">
-      <label for="text">Enter Your Message Here</label>
-      <input type="text" name="text" id="text" required/>
+      <label for="text">Enter Your Message Here: </label>
+      <!-- <textarea name="text" id="text" cols="30" rows="5"></textarea> -->
+      <input type="text" name="messageText" id="messageText" required/>
     </div>
     <div class="form-new-message-field">
       <input type="submit" value="Submit">
     </div>
   </form>
+
 </body>
 </html>
 
