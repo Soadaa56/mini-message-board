@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Test</h1>
+  <div>
+    <ul>
+      <% messages.forEach ((message) => { %>
+        <li>
+          <span><%- message.user %></span>
+          <span><%- message.text %></span>
+          <span><%- message.added %></span>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+  <%- include('form') %>
 </body>
 </html>
