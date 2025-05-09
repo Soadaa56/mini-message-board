@@ -24,12 +24,17 @@ indexRouter.get("/", (req, res) => {
 indexRouter.get("/new", (req, res) => {
   res.render("form");
 });
-
 indexRouter.post("/new", (req, res) => {
   const body = req.body;
   const { messageText, messageUser } = body;
   messages.push({ text: messageText, user: messageUser, added: new Date() });
   res.status(200).redirect("/");
+});
+
+indexRouter.get("/message", (req, res) => {
+  res.render("message:", {
+    message: message
+  });
 });
 
 module.exports = indexRouter;

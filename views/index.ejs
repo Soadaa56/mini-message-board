@@ -11,9 +11,9 @@
     <ul>
       <% messages.forEach ((message) => { %>
         <li>
-          <span><%- message.user %></span>
+          <p><%- message.user %></p>
           <span><%- message.text %></span>
-          <span><%- message.added %></span>
+          <span><a href="/message">Details</a></span>
         </li>
       <% }) %>
     </ul>
