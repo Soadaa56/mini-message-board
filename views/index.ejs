@@ -9,11 +9,11 @@
 <body>
   <div>
     <ul>
-      <% messages.forEach ((message) => { %>
+      <% messages.forEach ((message, index) => { %>
         <li>
           <p><%- message.user %></p>
           <span><%- message.text %></span>
-          <span><a href="/message">Details</a></span>
+          <span><a href="/message/<%-index%>" >Details</a></span>
         </li>
       <% }) %>
     </ul>

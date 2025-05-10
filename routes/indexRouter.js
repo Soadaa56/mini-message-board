@@ -31,8 +31,10 @@ indexRouter.post("/new", (req, res) => {
   res.status(200).redirect("/");
 });
 
-indexRouter.get("/message", (req, res) => {
-  res.render("message:", {
+indexRouter.get("/message/:index", (req, res) => {
+  const messageIndex = req.params.index;
+  const message = messages[messageIndex];
+  res.render("message", {
     message: message
   });
 });
