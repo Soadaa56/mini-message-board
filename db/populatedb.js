@@ -1,6 +1,6 @@
 #! /usr/bin/env node
-
-const { Client } = require("pq");
+require('dotenv').config();
+const { Client } = require("pg");
 
 const SQL = `
 DROP TABLE IF EXISTS messages;
