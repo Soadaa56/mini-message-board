@@ -4,7 +4,8 @@
   "description": "An assignment project from [The Odin Project](https://www.theodinproject.com) to get more comfortable with NodeJS and Express. [Project: Mini Message Board](https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
