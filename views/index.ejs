@@ -8,18 +8,19 @@
 </head>
 <body>
   <div>
+    <a href="/new">New Message</a>
+  </div>
+
+  <div>
     <ul>
       <% messages.forEach ((message, index) => { %>
         <li>
-          <p><%- message.user %></p>
-          <span><%- message.text %></span>
+          <p>Username: <%- message.username %></p>
+          <span><%- message.message %></span>
           <span><a href="/message/<%-index%>" >Details</a></span>
         </li>
       <% }) %>
     </ul>
-  </div>
-  <div>
-    <a href="/new">New Message</a>
   </div>
 </body>
 </html>
